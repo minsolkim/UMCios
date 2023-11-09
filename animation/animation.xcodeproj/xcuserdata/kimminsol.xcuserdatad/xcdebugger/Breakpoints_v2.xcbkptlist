@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "35794AFC-AD94-4FF3-BC5D-F3DC41C8FD72"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "16B0203D-8F9B-4D06-BF66-AE0BFE902F9F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "animation/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "16B0203D-8F9B-4D06-BF66-AE0BFE902F9F - 2198fe46234f52ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "animation.ViewController.pinkview.getter : Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "animation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kimminsol/Desktop/swift/animation/animation/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "16B0203D-8F9B-4D06-BF66-AE0BFE902F9F - 59d92db2df4ce863"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "animation.ViewController.pinkview.setter : Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "animation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kimminsol/Desktop/swift/animation/animation/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "16B0203D-8F9B-4D06-BF66-AE0BFE902F9F - 2d6e4a40b0c0b84c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "animation.ViewController.pinkview.modify : Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "animation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kimminsol/Desktop/swift/animation/animation/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "16B0203D-8F9B-4D06-BF66-AE0BFE902F9F - a17dc9bae6e6e33d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "animation.ViewController.pinkview.modify : Swift.Optional&lt;__C.UIView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "animation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kimminsol/Desktop/swift/animation/animation/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "16B0203D-8F9B-4D06-BF66-AE0BFE902F9F - 5ab6153e7fefa794"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "animation.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; animation.ViewController"
+                  moduleName = "animation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kimminsol/Desktop/swift/animation/animation/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "16B0203D-8F9B-4D06-BF66-AE0BFE902F9F - acbd74d7e18967d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "animation.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;animation.ViewController&gt;"
+                  moduleName = "animation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kimminsol/Desktop/swift/animation/animation/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "144">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
