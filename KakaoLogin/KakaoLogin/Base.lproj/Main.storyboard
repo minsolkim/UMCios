@@ -31,18 +31,37 @@
                                     <action selector="loginWithKakaoTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="in7-Xa-OZq"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인전" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJO-we-smC">
+                                <rect key="frame" x="153.33333333333334" y="488.66666666666669" width="86.666666666666657" height="30.000000000000057"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CAe-eq-P5F">
+                                <rect key="frame" x="49" y="475.66666666666674" width="68" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="XKX-Bh-l11"/>
+                                    <constraint firstAttribute="height" constant="73" id="doL-r4-bkX"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Gw9-oc-nUo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4WF-HG-vNg"/>
+                            <constraint firstItem="MJO-we-smC" firstAttribute="top" secondItem="Gw9-oc-nUo" secondAttribute="bottom" constant="35" id="C3r-4M-BOc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gw9-oc-nUo" secondAttribute="trailing" constant="10" id="Fs6-kC-K3G"/>
+                            <constraint firstItem="CAe-eq-P5F" firstAttribute="top" secondItem="Gw9-oc-nUo" secondAttribute="bottom" constant="22.329999999999998" id="G3I-hn-Pqs"/>
+                            <constraint firstItem="MJO-we-smC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vm2-ua-ZQd"/>
                             <constraint firstItem="Gw9-oc-nUo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XEz-lZ-ZpB"/>
+                            <constraint firstItem="MJO-we-smC" firstAttribute="leading" secondItem="CAe-eq-P5F" secondAttribute="trailing" constant="36.329999999999998" id="YLb-9W-LMC"/>
                             <constraint firstItem="Gw9-oc-nUo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="qrG-nL-ld0"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="infolabel" destination="MJO-we-smC" id="dvh-N7-STP"/>
                         <outlet property="kakaologin" destination="Gw9-oc-nUo" id="5CW-Dh-qcz"/>
+                        <outlet property="profileImageView" destination="CAe-eq-P5F" id="o6B-s7-DBd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
