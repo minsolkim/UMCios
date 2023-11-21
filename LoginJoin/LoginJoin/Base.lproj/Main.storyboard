@@ -27,13 +27,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="IDTextFieldEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="NSu-Yu-k6u"/>
+                                    <action selector="idedit:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="twz-b3-sPF"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PW" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CAq-4q-zEx">
                                 <rect key="frame" x="10" y="409" width="373" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="passwordedit:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="dDm-ee-X5J"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Soe-oC-Hkm">
                                 <rect key="frame" x="10" y="491" width="373" height="40"/>
@@ -44,6 +47,9 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="로그인"/>
+                                <connections>
+                                    <action selector="LoginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kJI-Yc-Tez"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzv-nQ-rJl">
                                 <rect key="frame" x="10" y="546" width="373" height="40"/>
@@ -55,7 +61,6 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="회원가입"/>
                                 <connections>
-                                    <action selector="JOINTextFieldEditing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BKH-Z8-Yyz"/>
                                     <action selector="JoinButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7KM-Ie-CAE"/>
                                 </connections>
                             </button>
