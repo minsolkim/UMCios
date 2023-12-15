@@ -1,0 +1,6 @@
+framework module Pods_finedustAPI_finedustAPIUITests {
+  umbrella header "Pods-finedustAPI-finedustAPIUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
