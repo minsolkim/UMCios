@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import Lottie
 import Alamofire
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         

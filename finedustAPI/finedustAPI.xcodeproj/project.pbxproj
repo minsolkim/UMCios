@@ -101,7 +101,6 @@
 				4B4E929AF24D6B0C06B1E2E6 /* Pods-finedustAPITests.debug.xcconfig */,
 				DF82AD038F0710514F28708E /* Pods-finedustAPITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
