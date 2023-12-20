@@ -19,6 +19,9 @@
 		5828A2E42B2C59C9006BAA6E /* finedustAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5828A2E32B2C59C9006BAA6E /* finedustAPITests.swift */; };
 		5828A2EE2B2C59C9006BAA6E /* finedustAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5828A2ED2B2C59C9006BAA6E /* finedustAPIUITests.swift */; };
 		5828A2F02B2C59C9006BAA6E /* finedustAPIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5828A2EF2B2C59C9006BAA6E /* finedustAPIUITestsLaunchTests.swift */; };
+		5828A3232B331091006BAA6E /* FinedustRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5828A3222B331091006BAA6E /* FinedustRequest.swift */; };
+		5828A3252B33146C006BAA6E /* AirPollutionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5828A3242B33146C006BAA6E /* AirPollutionEntity.swift */; };
+		5828A3282B33169C006BAA6E /* AirInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5828A3272B33169C006BAA6E /* AirInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		5828A2E92B2C59C9006BAA6E /* finedustAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = finedustAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5828A2ED2B2C59C9006BAA6E /* finedustAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finedustAPIUITests.swift; sourceTree = "<group>"; };
 		5828A2EF2B2C59C9006BAA6E /* finedustAPIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finedustAPIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5828A3222B331091006BAA6E /* FinedustRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinedustRequest.swift; sourceTree = "<group>"; };
+		5828A3242B33146C006BAA6E /* AirPollutionEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPollutionEntity.swift; sourceTree = "<group>"; };
+		5828A3272B33169C006BAA6E /* AirInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirInfo.swift; sourceTree = "<group>"; };
 		65FB8601E8FA42DFE14DD2A3 /* Pods_finedustAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_finedustAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88C73142E47F1324D96CFACF /* Pods-finedustAPI-finedustAPIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-finedustAPI-finedustAPIUITests.debug.xcconfig"; path = "Target Support Files/Pods-finedustAPI-finedustAPIUITests/Pods-finedustAPI-finedustAPIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3B58FD3FA3DED6175FC26E4 /* Pods-finedustAPI-finedustAPIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-finedustAPI-finedustAPIUITests.release.xcconfig"; path = "Target Support Files/Pods-finedustAPI-finedustAPIUITests/Pods-finedustAPI-finedustAPIUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +135,8 @@
 		5828A2CB2B2C59C8006BAA6E /* finedustAPI */ = {
 			isa = PBXGroup;
 			children = (
+				5828A3262B33168B006BAA6E /* Info */,
+				5828A3212B331073006BAA6E /* API */,
 				5828A2CC2B2C59C8006BAA6E /* AppDelegate.swift */,
 				5828A2CE2B2C59C8006BAA6E /* SceneDelegate.swift */,
 				5828A2D02B2C59C8006BAA6E /* ViewController.swift */,
@@ -155,6 +163,23 @@
 				5828A2EF2B2C59C9006BAA6E /* finedustAPIUITestsLaunchTests.swift */,
 			);
 			path = finedustAPIUITests;
+			sourceTree = "<group>";
+		};
+		5828A3212B331073006BAA6E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5828A3222B331091006BAA6E /* FinedustRequest.swift */,
+				5828A3242B33146C006BAA6E /* AirPollutionEntity.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5828A3262B33168B006BAA6E /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				5828A3272B33169C006BAA6E /* AirInfo.swift */,
+			);
+			path = Info;
 			sourceTree = "<group>";
 		};
 		F339A648EA4976C914889A62 /* Frameworks */ = {
@@ -406,9 +431,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5828A3252B33146C006BAA6E /* AirPollutionEntity.swift in Sources */,
 				5828A2D12B2C59C8006BAA6E /* ViewController.swift in Sources */,
 				5828A2CD2B2C59C8006BAA6E /* AppDelegate.swift in Sources */,
 				5828A2CF2B2C59C8006BAA6E /* SceneDelegate.swift in Sources */,
+				5828A3282B33169C006BAA6E /* AirInfo.swift in Sources */,
+				5828A3232B331091006BAA6E /* FinedustRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
