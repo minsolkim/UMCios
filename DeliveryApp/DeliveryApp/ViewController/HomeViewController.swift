@@ -14,10 +14,29 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var SearchBarV: UIView!
     
     @IBOutlet weak var SearchBarTextField: UIView!
-    
     @IBOutlet weak var EventBar: UIView!
     
     @IBOutlet weak var ItemBar: UIView!
+    
+    @IBOutlet weak var Event1bar: UIView!
+    @IBOutlet weak var Event2bar: UIView!
+    @IBOutlet weak var Event3bar: UIView!
+    
+    @IBOutlet weak var food1: UIView!
+    @IBOutlet weak var food2: UIView!
+    @IBOutlet weak var food3: UIView!
+    @IBOutlet weak var food4: UIView!
+    @IBOutlet weak var food5: UIView!
+    
+    @IBOutlet weak var food6: UIView!
+    
+    @IBOutlet weak var food7: UIView!
+    
+    @IBOutlet weak var food8: UIView!
+    
+    @IBOutlet weak var food9: UIView!
+    
+    @IBOutlet weak var food10: UIView!
     @IBOutlet weak var bannerCollectionV: UICollectionView!
     private var timer : Timer?
     private enum Color {
@@ -78,11 +97,24 @@ class HomeViewController: UIViewController {
         SearchBarTextField.layer.shadowColor = UIColor.black.cgColor
         //이벤트 모양 뷰 만들기
         EventBar.layer.cornerRadius = 15
-        
+        //첫번째 이벤트 뷰
+        Event1bar.layer.cornerRadius = 15
+        //두번째 이벤트 뷰
+        Event2bar.layer.cornerRadius = 15
+        //세번째 이벤트 뷰
+        Event3bar.layer.cornerRadius = 15
         //알뜸 한집 배달 모양 뷰 만들기
         ItemBar.layer.cornerRadius = 15
-        ItemBar.layer.borderWidth = 3
-        
+        food1.layer.cornerRadius = 20
+        food2.layer.cornerRadius = 20
+        food3.layer.cornerRadius = 20
+        food4.layer.cornerRadius = 20
+        food5.layer.cornerRadius = 20
+        food6.layer.cornerRadius = 20
+        food7.layer.cornerRadius = 20
+        food8.layer.cornerRadius = 20
+        food9.layer.cornerRadius = 20
+        food10.layer.cornerRadius = 20
 
     }
     func bannerTimer() {
