@@ -60,7 +60,28 @@
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYc-5j-2Ut" userLabel="SearchBarTextField">
                                                         <rect key="frame" x="15" y="0.0" width="363" height="45.333333333333336"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="샌드위치 나와라 뚝딱" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5gq-Tt-c3W">
+                                                                <rect key="frame" x="41.333333333333343" y="13.333333333333334" width="117" height="18.666666666666664"/>
+                                                                <color key="textColor" systemColor="systemGray2Color"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifier" translatesAutoresizingMaskIntoConstraints="NO" id="488-mF-WiB">
+                                                                <rect key="frame" x="8.3333333333333321" y="12.333333333333336" width="21" height="21"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="21" id="NLG-oG-JlC"/>
+                                                                    <constraint firstAttribute="height" constant="21" id="oqe-0l-Q2p"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="5gq-Tt-c3W" firstAttribute="leading" secondItem="488-mF-WiB" secondAttribute="trailing" constant="12" id="5W5-5d-HxF"/>
+                                                            <constraint firstItem="488-mF-WiB" firstAttribute="centerY" secondItem="fYc-5j-2Ut" secondAttribute="centerY" id="727-3u-Ahz"/>
+                                                            <constraint firstItem="5gq-Tt-c3W" firstAttribute="centerY" secondItem="fYc-5j-2Ut" secondAttribute="centerY" id="PPC-kr-Q4F"/>
+                                                            <constraint firstItem="5gq-Tt-c3W" firstAttribute="centerX" secondItem="fYc-5j-2Ut" secondAttribute="centerX" multiplier="0.55" id="TRO-ew-8wg"/>
+                                                        </constraints>
                                                     </view>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -248,14 +269,19 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yEP-9C-TwZ">
                                                                 <rect key="frame" x="0.0" y="0.0" width="363" height="235.66666666666666"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyA-BH-dDz">
+                                                                    <stackView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="mjv-FY-LKc">
                                                                         <rect key="frame" x="0.0" y="0.0" width="363" height="47.333333333333336"/>
-                                                                        <color key="tintColor" systemColor="labelColor"/>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain" title="알뜰·한집 배달">
-                                                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
-                                                                        </buttonConfiguration>
-                                                                    </button>
+                                                                        <subviews>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyA-BH-dDz">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="363" height="47.333333333333336"/>
+                                                                                <color key="tintColor" systemColor="labelColor"/>
+                                                                                <state key="normal" title="Button"/>
+                                                                                <buttonConfiguration key="configuration" style="plain" title="알뜰·한집 배달  배민1 매일 드려요 할인 쿠폰">
+                                                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="10"/>
+                                                                                </buttonConfiguration>
+                                                                            </button>
+                                                                        </subviews>
+                                                                    </stackView>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uzn-rX-D0O">
                                                                         <rect key="frame" x="0.0" y="47.333333333333314" width="363" height="47"/>
                                                                         <subviews>
@@ -477,27 +503,37 @@
                                                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvS-0S-ieJ">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="72.666666666666671" height="47.333333333333336"/>
                                                                                 <state key="normal" title="Button"/>
-                                                                                <buttonConfiguration key="configuration" style="plain" title="버거"/>
+                                                                                <buttonConfiguration key="configuration" style="plain" title="버거">
+                                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                                                                </buttonConfiguration>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4E7-bX-nzV">
                                                                                 <rect key="frame" x="72.666666666666657" y="0.0" width="72.666666666666657" height="47.333333333333336"/>
                                                                                 <state key="normal" title="Button"/>
-                                                                                <buttonConfiguration key="configuration" style="plain" title="분식"/>
+                                                                                <buttonConfiguration key="configuration" style="plain" title="분식">
+                                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                                                                </buttonConfiguration>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vnb-Ga-Xm6">
                                                                                 <rect key="frame" x="145.33333333333334" y="0.0" width="72.333333333333343" height="47.333333333333336"/>
                                                                                 <state key="normal" title="Button"/>
-                                                                                <buttonConfiguration key="configuration" style="plain" title="디저트"/>
+                                                                                <buttonConfiguration key="configuration" style="plain" title="디저트">
+                                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                                                                </buttonConfiguration>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6d-D7-Wrr">
                                                                                 <rect key="frame" x="217.66666666666666" y="0.0" width="72.666666666666657" height="47.333333333333336"/>
                                                                                 <state key="normal" title="Button"/>
-                                                                                <buttonConfiguration key="configuration" style="plain" title="CU"/>
+                                                                                <buttonConfiguration key="configuration" style="plain" title="CU">
+                                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                                                                </buttonConfiguration>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcs-3b-ZSD">
                                                                                 <rect key="frame" x="290.33333333333331" y="0.0" width="72.666666666666686" height="47.333333333333336"/>
                                                                                 <state key="normal" title="Button"/>
-                                                                                <buttonConfiguration key="configuration" style="plain" title="뷰티"/>
+                                                                                <buttonConfiguration key="configuration" style="plain" title="뷰티">
+                                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                                                                </buttonConfiguration>
                                                                             </button>
                                                                         </subviews>
                                                                         <color key="tintColor" systemColor="labelColor"/>
@@ -507,7 +543,6 @@
                                                                     <constraint firstAttribute="trailing" secondItem="uzn-rX-D0O" secondAttribute="trailing" constant="15" id="2sl-fk-Bgx"/>
                                                                     <constraint firstAttribute="trailing" secondItem="zcG-iQ-XRf" secondAttribute="trailing" constant="15" id="EmC-rK-JHx"/>
                                                                     <constraint firstItem="uzn-rX-D0O" firstAttribute="leading" secondItem="yEP-9C-TwZ" secondAttribute="leading" constant="15" id="M4O-eu-fA9"/>
-                                                                    <constraint firstItem="xyA-BH-dDz" firstAttribute="height" secondItem="yEP-9C-TwZ" secondAttribute="height" multiplier="0.2" id="SyB-oU-mV2"/>
                                                                     <constraint firstItem="zcG-iQ-XRf" firstAttribute="leading" secondItem="yEP-9C-TwZ" secondAttribute="leading" constant="15" id="nPc-qr-Ysp"/>
                                                                 </constraints>
                                                             </stackView>
@@ -674,7 +709,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="WLW-L9-EZW">
                         <rightBarButtonItems>
-                            <barButtonItem image="navibaritem3" id="nZl-qT-WqJ"/>
+                            <barButtonItem image="shopping-cart" id="nZl-qT-WqJ"/>
                             <barButtonItem image="navibaritem2" id="blS-yc-83Q"/>
                             <barButtonItem image="navibaritem-1" id="NzC-37-yol"/>
                         </rightBarButtonItems>
@@ -688,6 +723,7 @@
                         <outlet property="ScrollV" destination="dd3-7e-chs" id="7ac-XI-aZE"/>
                         <outlet property="SearchBarTextField" destination="fYc-5j-2Ut" id="k6e-Ga-zdA"/>
                         <outlet property="SearchBarV" destination="t46-EK-PQl" id="e65-bi-MxM"/>
+                        <outlet property="Titledelivery" destination="xyA-BH-dDz" id="eOA-bt-nDR"/>
                         <outlet property="bannerCollectionV" destination="wcg-XK-nro" id="qEN-vV-eDh"/>
                         <outlet property="food1" destination="dRU-9Z-BMd" id="mto-u7-Toh"/>
                         <outlet property="food10" destination="soL-Gk-zg7" id="FAn-hy-dMD"/>
@@ -921,11 +957,12 @@
         <image name="hamburger" width="40" height="40"/>
         <image name="img" width="40" height="29"/>
         <image name="jajangmyeon" width="40" height="40"/>
+        <image name="magnifier" width="24" height="24"/>
         <image name="navibaritem-1" width="24" height="24"/>
         <image name="navibaritem2" width="28" height="28"/>
-        <image name="navibaritem3" width="28" height="28"/>
         <image name="pizza" width="30" height="30"/>
         <image name="shop" width="512" height="512"/>
+        <image name="shopping-cart" width="17" height="17"/>
         <image name="tteokbokki" width="40" height="40"/>
         <image name="veal" width="40" height="40"/>
         <systemColor name="labelColor">
@@ -939,6 +976,9 @@
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

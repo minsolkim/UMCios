@@ -22,6 +22,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var Event2bar: UIView!
     @IBOutlet weak var Event3bar: UIView!
     
+    @IBOutlet weak var Titledelivery: UIButton!
     @IBOutlet weak var food1: UIView!
     @IBOutlet weak var food2: UIView!
     @IBOutlet weak var food3: UIView!
@@ -69,6 +70,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         control()
+        controlfont() //폰트 사이즈 조정
         bannerCollectionV.delegate = self
         bannerCollectionV.dataSource = self
         bannerTimer()
@@ -104,7 +106,9 @@ class HomeViewController: UIViewController {
         //세번째 이벤트 뷰
         Event3bar.layer.cornerRadius = 15
         //알뜸 한집 배달 모양 뷰 만들기
+        
         ItemBar.layer.cornerRadius = 15
+        
         food1.layer.cornerRadius = 20
         food2.layer.cornerRadius = 20
         food3.layer.cornerRadius = 20
@@ -116,6 +120,18 @@ class HomeViewController: UIViewController {
         food9.layer.cornerRadius = 20
         food10.layer.cornerRadius = 20
 
+    }
+    func controlfont() {
+       let attributedStr = NSMutableAttributedString(string: Titledelivery.titleLabel?.text ?? "알뜰·한집 배달 배민1 매일 드려요 할인 쿠폰")
+        // text중 알뜰·한집 배달에 해당하는 곳
+        attributedStr.addAttribute(.font, value: UIFont.boldSystemFont(ofSize: 19), range: ((Titledelivery.titleLabel?.text)! as NSString).range(of: "알뜰·한집 배달"))
+
+        // text중 배민1 해당하는 곳
+        attributedStr.addAttribute(.font, value: UIFont.boldSystemFont(ofSize: 13), range: ((Titledelivery.titleLabel?.text)! as NSString).range(of: "배민1"))
+        // text중 매일 드려요 할인 쿠폰에 해당하는 곳
+        attributedStr.addAttribute(.font, value: UIFont.systemFont(ofSize: 13), range: ((Titledelivery.titleLabel?.text)! as NSString).range(of: "매일 드려요 할인 쿠폰"))
+        Titledelivery.setAttributedTitle(attributedStr, for: .normal)
+        
     }
     func bannerTimer() {
     let _: Timer = Timer.scheduledTimer(withTimeInterval: 3, repeats: true) {
@@ -177,6 +193,7 @@ class HomeViewController: UIViewController {
     }
 
 }
+
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return bannerImageArray.count
