@@ -11,20 +11,19 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        constraint()
-        view.backgroundColor = .black
+        navigationcontrol()
         
-        //간격을 설정할 UIBarButtonItem을 생성한다.
+        
+        
         
                 
     }
-    func constraint() {
+    //네비게이션 바 설정
+    func navigationcontrol() {
+        view.backgroundColor = .black
         let button = UIBarButtonItem(title: "저장", style: .plain, target: self, action: #selector(button1Tapped))
+        let backbutton = UIBarButtonItem(image: UIImage(named: "back"), style: .plain, target: self, action: #selector(button1Tapped))
         
-        //이미지 크기 조정
-        let image1 = UIImage(named: "back")?.resizeImage(targetSize: CGSize(width: 25, height: 25))
-        // 이미지의 렌더링 모드를 .alwaysOriginal로 설정합니다.
-        let backbutton = UIBarButtonItem(image: image1?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(button1Tapped))
         button.tintColor = UIColor(named: "Systemcolor")
         backbutton.tintColor = UIColor(named: "Systemcolor")
         //간격을 배열로 설정
@@ -33,6 +32,12 @@ class ViewController: UIViewController {
         
         navigationItem.rightBarButtonItem = button
         navigationItem.leftBarButtonItem = backbutton
+        self.navigationItem.title = "집밥토크 글쓰기"
+        //title 흰색으로 설정
+        if let navigationBar = navigationController?.navigationBar {
+            navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+            }
+        
     }
     func resizeImage(image: UIImage?, targetSize: CGSize) -> UIImage? {
         guard let image = image else {
